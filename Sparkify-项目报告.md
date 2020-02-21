@@ -44,15 +44,15 @@ Accuracy=Npre/Ntotal
 Positive|True Postive|False Positve
 Negative|False Negative|True Negative
 * 在混淆矩阵中：
+```
+    precision=TP/(TP+FP)
 
-    $precision=\frac{TP}{TP+FP}$
+    recall==TP/(TP+FN)
 
-    $recall=\frac{TP}{TP+FN}$
-
-    $F1=\frac{2precision*recall}{precision+recall}$
+    F1=2*precision*recall/(precision+recall)
     
-    $F1=\frac{TP+TN}{TP+FN+TN+FP}$
- 
+    Accuracy=(TP+TN)/(TP+FN+TN+FP)
+``` 
  * Precision:被我们算法选为positive的数据中，有多少是真的positive  
  * Recall：实际应为Positive的数据中，多少被我们选为了Positive
  * 准确率：Accuracy，我们正确分类了多少
@@ -722,6 +722,9 @@ rf.maxDepth,[5,10]
 ## 参考资料
 ---
 [1]<https://stackoverflow.com/questions/38027877/spark-transformation-why-its-lazy-and-what-is-the-advantage>
+
 [2]<https://techvidvan.com/tutorials/spark-lazy-evaluation/>
+
 [3]<https://blog.csdn.net/matrix_space/article/details/50384518>
+
 [4]<https://www.cnblogs.com/Allen-rg/p/9255286.html>
