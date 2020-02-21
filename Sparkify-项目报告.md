@@ -1,4 +1,3 @@
-[TOC]
 # Sparkify 项目 
 **项目概述**
 * 这是一个虚构的在线音乐流媒体网站Sparkify，数百万用户通过该网站的服务，使用免费套餐，或使用高级订阅模式，获得听取音乐更多权限。用户可以随时升级，降级或取消其服务。用户喜欢这项服务对于网站十分重要（涉及到用户的粘连，留存等）。每次用户与服务进行交互（即，降级服务，播放歌曲，注销，喜欢歌曲，添加歌单等）时，都会生成数据。所有这些数据都潜藏着有价值的信息，通过对于这些信息的挖掘分析，我们可以使用户的体验得到缇舍管并使网站得到更好的发展。我们感兴趣的目标是是否可以预测哪些用户有流失的风险。目标是在这些用户离开之前对其进行预测，以便用户可以在流失前获得优惠和奖励以减少用户流失率。
@@ -45,9 +44,13 @@ Accuracy=Npre/Ntotal
 Positive|True Postive|False Positve
 Negative|False Negative|True Negative
 * 在混淆矩阵中：
+
     $precision=\frac{TP}{TP+FP}$
+
     $recall=\frac{TP}{TP+FN}$
+
     $F1=\frac{2precision*recall}{precision+recall}$
+    
     $F1=\frac{TP+TN}{TP+FN+TN+FP}$
  
  * Precision:被我们算法选为positive的数据中，有多少是真的positive  
@@ -717,8 +720,8 @@ rf.maxDepth,[5,10]
 * 其lazy evaluation的特性使得设计操作步骤十分从容，一个好厨师准备好食材就等下锅的感觉，优化流程，节省时间，使项目可管理性大大提高。
 
 ## 参考资料
+---
 [1]<https://stackoverflow.com/questions/38027877/spark-transformation-why-its-lazy-and-what-is-the-advantage>
 [2]<https://techvidvan.com/tutorials/spark-lazy-evaluation/>
-
-[3]  <https://blog.csdn.net/matrix_space/article/details/50384518>
+[3]<https://blog.csdn.net/matrix_space/article/details/50384518>
 [4]<https://www.cnblogs.com/Allen-rg/p/9255286.html>
